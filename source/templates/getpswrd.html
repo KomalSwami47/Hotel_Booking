@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Password Recovery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="static/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="static/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+
+    <link rel="icon" type="image/png" href="https://colorlib.com/etc/lf/Login_v18/images/icons/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="static/lcss/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="static/lcss/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="static/lcss/icon-font.min.css">
+
+    <link rel="stylesheet" type="text/css" href="static/lcss/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="static/lcss/hamburgers.min.css">
+
+    <link rel="stylesheet" type="text/css" href="static/lcss/animsition.min.css">
+
+    <link rel="stylesheet" type="text/css" href="static/lcss/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="static/lcss/daterangepicker.css">
+
+    <link rel="stylesheet" type="text/css" href="static/lcss/util.css">
+    <link rel="stylesheet" type="text/css" href="static/lcss/main.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+      a.ex2:hover, a.ex2:active {font-size: 150%; font-family: monospace; color: white;}
+    </style>
+  </head>
+  <body>
+    
+    <header role="banner">
+     
+      <nav class="navbar navbar-expand-md navbar-dark bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="/">IDFC Hotel</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
+            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="/check">Booked Inquiry</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/cancel">Cancel Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/contact">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+
+
+    <section>
+      <div>
+        <style style="background-color: #666666;"></style>
+          <div class="limiter">
+            <div class="container-login100">
+              <div class="wrap-login100">
+                <form style="background-color: #7E5F48;" class="login100-form validate-form" action="/forgotpassword" method="POST">
+                  <span class="login100-form-title p-b-43">
+                    Recover Your Password Here
+                  </span>
+                  <div class="wrap-input100 validate-input" 
+                        data-validate="Valid email is required: ex@abc.xyz">
+                    <input style="color:white" class="input100" type="text" name="mailid">
+                    <span class="focus-input100"></span>
+                    <span style="color:white" class="label-input100">Email</span>
+                  </div>
+                  <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                    Get Password
+                    </button>
+                  </div>
+                  <i style="color: white">{{confirmation}}</i>
+                  <i style="color: black">{{ids}}</i>
+                </form>
+              <div class="login100-more" style="background-image: url(static/images/img_5.jpg);">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- END section -->
+   
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <h3>Phone Support</h3>
+            <p>24/7 Call us now.</p>
+            <p class="lead"><a href="tel://">+ 91 123456789</a></p>
+          </div>
+          <div class="col-md-4">
+            <h3>Connect With Us</h3>
+            <p>We are socialized. Follow us</p>
+            <p>
+              <a href="facebook_link" class="pl-0 p-3">
+                <span class="fa fa-facebook"></span>
+              </a>
+              <a href="twitter_link" class="p-3">
+                <span class="fa fa-twitter"></span>
+              </a>
+              <a href="instagram_link" class="p-3">
+                <span class="fa fa-instagram"></span>
+              </a>
+              <a href="linkedin_link" class="p-3">
+                <span class="fa fa-youtube-play"></span>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3>Connect With Us</h3>
+            <p>Drop your mail here we will contact with you as soon as possible.</p>
+            <form action="/" method="POST" class="subscribe">
+              <div class="form-group">
+                <button type="submit"><span class="ion-ios-arrow-thin-right"></span></button>
+                <input type="email" class="form-control" name="mail" placeholder="Enter email" required/>
+              </div>
+              
+            </form>
+            {{value}}
+            {{output}}
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+    
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/jquery-migrate-3.0.0.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/jquery.waypoints.min.js"></script>
+    <script src="static/js/jquery.stellar.min.js"></script>
+
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/magnific-popup-options.js"></script>
+
+    <script src="static/js/main.js"></script>
+
+    <script type="text/javascript" async="" src="static/lcss/analytics.js"></script>
+    <script src="static/lcss/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+    <script src="static/lcss/animsition.min.js" type="text/javascript"></script>
+
+    <script src="static/lcss/popper.js" type="text/javascript"></script>
+    <script src="static/lcss/bootstrap.min.js" type="text/javascript"></script>
+
+    <script src="static/lcss/select2.min.js" type="text/javascript"></script>
+
+    <script src="static/lcss/moment.min.js" type="text/javascript"></script>
+    <script src="static/lcss/daterangepicker.js" type="text/javascript"></script>
+
+    <script src="static/lcss/countdowntime.js" type="text/javascript"></script>
+
+    <script src="static/lcss/main.js" type="text/javascript"></script>
+
+    <script async="" src="static/lcss/js" type="text/javascript"></script>
+
+  </body>
+</html>
